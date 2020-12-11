@@ -1,0 +1,130 @@
+/* *************************************************************************************************** */
+                                                 /* UOPSTENO  */
+
+/* *************************************************************************************************** */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Amatic SC';
+}         
+.page{
+    margin: 0px;
+    padding: 0px;
+}
+.kolona{
+    width: 70%;
+    margin: 0px auto;
+}
+
+
+
+/* *************************************************************************************************** */
+                                                /* HEADER  */
+/* *************************************************************************************************** */
+#logo-i-social{
+    display: flex;
+}
+#logo{
+    flex-grow: 1;
+    align-items: center;
+}
+#logo img{
+    width: 80px;
+}
+#social{
+    flex-grow: 1;
+    text-align: right;
+}
+#social a{
+    text-decoration: none;
+}
+#social a img{
+    width: 30px;
+    margin: 10px 5px;
+}
+
+/* *************************************************************************************************** */
+                                                    /* HEADER  */
+/* *************************************************************************************************** */
+
+#main-manu{
+    display: flex;
+    font-size: 22px;
+}
+#main-manu div img{
+    width: 22px;
+}
+#main-manu > div{
+    flex-grow: 1;
+    position: relative;                                             /*stavlja se da bi podmeni bio pozicioniran u odnosu na nju*/
+    margin: 0px;
+    padding: 0px;
+}
+#main-manu  > div > a{
+    display: block;                                                                       /* a tagovi su po difoltu kao inline;*/
+    text-align: center;                                    /*posto smo ih postavili na block moramo ih staviti na sredinu bloka*/
+    text-decoration: none;                                      /*necemo da bude podvuceno jer su a tagovi po difoltu podvuceni*/
+    color: rgb(191, 132, 5);
+    transition: 300ms;
+    padding: 10px;
+}
+
+#main-manu > div > a:hover{
+    background-color:  rgb(191, 132, 5);
+    color: white;
+}
+#main-manu > div > div > a{
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: rgb(191, 132, 5);
+    border-bottom: 1px solid rgb(191, 132, 5);
+    text-align: center;
+    margin: 0px;
+}
+#main-manu > div > div{
+    display: none;
+    position: absolute;                                                               /*pozicionirana je u odnosu na roditelja*/
+    width: 100%;
+    background-color: white;
+}
+#main-manu > div > div > a:hover{
+    background-color:  rgb(191, 132, 5);
+    color: white;
+}
+#main-manu > div:hover > div{
+    display: block;
+}
+.aktivan{
+    background-color: rgb(249, 255, 197);
+}
+
+
+/* *************************************************************************************************** */
+                                            /* STRANA  */
+/* *************************************************************************************************** */
+.page .kolona{
+    height: 100vh;
+}
+
+#pocetna{
+    text-align: center;
+    background: url(../slike/Pozadine/pozadina3.jpg);
+    background-size: 100% auto;                                                                  /*pozadina popunjava 100% sirine*/              
+    background-size: cover;                                        /*slika se ne deli u vise manjih slika nego je uvek jedna cela*/
+    background-attachment: fixed;                                                       /*  kada skrolujemo slika ostaje na mestu*/
+}
+
+#pocetna .textdiv{
+    color:black;
+    margin-bottom: 20vh;
+    padding-top: 40vh;
+    margin-right: 100vh;
+    font-size: 70px;
+}
+#pocetna .poruka{
+    color:black;
+    margin-right: 100vh;
+    font-size: 5vh;
+}
+
